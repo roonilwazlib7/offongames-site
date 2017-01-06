@@ -5,6 +5,26 @@ $(document).ready( function(){
         {
             name: "OpenSpace",
             version: "alpha1"
+        },
+        {
+            name: "Knackered",
+            version: "alpha1"
+        },
+        {
+            name: "Bounce",
+            version: "alpha1"
+        },
+        {
+            name: "Fantactics",
+            version: "alpha1"
+        },
+        {
+            name: "Smiley",
+            version: "alpha1"
+        },
+        {
+            name: "Asteroids",
+            version: "alpha1"
         }
     ];
 
