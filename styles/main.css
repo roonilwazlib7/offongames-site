@@ -1,5 +1,11 @@
+@font-face {
+    font-family: futureFont;
+    src: url(kenvector_future.ttf);
+}
 body{
     background-color: black;
+    font-family: futureFont;
+    overflow-x: hidden;
 }
 .top, .middle, .bottom{
     min-height: 100px;
@@ -15,10 +21,18 @@ body{
     background-color: black;
     color: white;
 }
+.bottom{
+    padding-top: 5%;
+}
 .game {
     padding: 1%;
     border: 1px solid;
 }
 
 .preview img {
+}
+
+a{
+    color: white !important;
+    margin-left: 2%;
 }
