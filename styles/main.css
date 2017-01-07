@@ -36,8 +36,11 @@ body{
 }
 
 a{
-    color: white !important;
+    color: white;
     margin-left: 2%;
+}
+.controls a{
+    color: black;
 }
 .dev-status {
     float: right;

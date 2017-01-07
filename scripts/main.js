@@ -3,6 +3,11 @@ $(document).ready( function(){
 
     var games = [
         {
+            name: "TankyTank",
+            version: "none",
+            devStatus: "prototype"
+        },
+        {
             name: "OpenSpace",
             version: "alpha1",
             devStatus: "alpha"
@@ -77,6 +82,13 @@ $(document).ready( function(){
                 devStatus.html("Closed");
                 break;
 
+            case "prototype":
+                devStatus.css({
+                    "border-color": "purple",
+                    "color": "purple"
+                });
+                devStatus.html("Prototype");
+            break;
         }
 
         html.find("h2").html( game.name );
@@ -84,6 +96,12 @@ $(document).ready( function(){
         html.show();
         html.data("game-name",game.name);
         html.data("game-version",game.version);
+
+        if (game.devStatus == "prototype")
+        {
+            html.find(".download-button").attr("disabled", "disabled");
+        }
+
         html.click(function(){
             var name = $(this).data("game-name");
             var version = $(this).data("game-version");
