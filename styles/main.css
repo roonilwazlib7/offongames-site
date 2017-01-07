@@ -23,10 +23,13 @@ body{
 }
 .bottom{
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 .game {
     padding: 1%;
     border: 1px solid;
+    min-height: 35%;
+    max-height: 35%;
 }
 
 .preview img {
@@ -35,4 +38,10 @@ body{
 a{
     color: white !important;
     margin-left: 2%;
+}
+.dev-status {
+    float: right;
+    border: 1px solid;
+    padding: 5%;
+    border-radius: 5px;
 }
