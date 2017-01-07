@@ -82,9 +82,12 @@ $(document).ready( function(){
         html.find("h2").html( game.name );
         html.find("img").attr("src", "images/" + game.name + ".png");
         html.show();
+        html.data("game-name",game.name);
+        html.data("game-version",game.version);
         html.click(function(){
-
-            window.location = "https://github.com/roonilwazlib7/offongames/raw/master/GameBuilds/" + game.name + "/" + game.version + ".zip";
+            var name = $(this).data("game-name");
+            var version = $(this).data("game-version");
+            window.location = "https://github.com/roonilwazlib7/offongames/raw/master/GameBuilds/" + name + "/" + version + ".zip";
 
         });
 
