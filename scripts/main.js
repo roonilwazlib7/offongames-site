@@ -24,8 +24,8 @@ $(document).ready( function(){
         },
         {
             name: "Fantactics",
-            version: "alpha1",
-            devStatus: "closed"
+            version: "alpha2",
+            devStatus: "prototype"
         },
         {
             name: "Smiley",
