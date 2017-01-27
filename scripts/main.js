@@ -99,7 +99,7 @@ $(document).ready( function(){
 
         if (game.devStatus == "prototype")
         {
-            html.find(".download-button").attr("disabled", "disabled");
+            //html.find(".download-button").attr("disabled", "disabled");
         }
 
         html.click(function(){
